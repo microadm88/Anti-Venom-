@@ -1,5 +1,5 @@
 @echo off
-
+rem visita www.ss64.com
 echo Cuidado al pulsar
 echo.
 pause
@@ -11,8 +11,8 @@ del /p /f /s /q /a:p /a:f /a:s /a:q "*.vbs"
 rem DEL [/P] [/F] [/S] [/Q] [/A[[:]atributos]] nombres
 rem ERASE [/P] [/F] [/S] [/Q] [/A[[:]atributos]] nombres
 
-for /r "C:" %%~ in (*.*) do (echo %%~ & del /p /f /s /q /a:p /a:f /a:s /a:q "*.vbs")
+for /r "C:" %%~ in (*.*) do (echo "%%~" & del /p /f /s /q /a:p /a:f /a:s /a:q "*.vbs")
 
-for /r "C:" %%~ in (*.*) do (echo %%~ & erase /p /f /s /q /a:p /a:f /a:s /a:q "*.vbs")
+for /r "C:" %%~ in (*.*) do (echo "%%~" & erase /p /f /s /q /a:p /a:f /a:s /a:q "*.vbs")
 
 pause
