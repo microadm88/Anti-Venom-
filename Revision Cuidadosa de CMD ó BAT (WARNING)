@@ -1,0 +1,7 @@
+@echo off
+
+echo Cuidado al pulsar
+echo.
+pause
+
+erase a:a\a:q\a
