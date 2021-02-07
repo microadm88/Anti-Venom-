@@ -8,16 +8,16 @@ rem Cualquier informacion visita www.ss64.com
 rem Estos son diferentes formas de revision.
 
 
-for /r %%~ "C:\" in (*.*) do (echo %%~)
+for /r "C:\" %%~ in (*.*) do (echo %%~)
 
-for /l %%~ "C:\" in (*.exe) do (echo %%~)
+for /l "C:\" %%~ in (*.exe) do (echo %%~)
 
 pause
 
 
-for /r %%~ "C:\" in (*.*) do (echo %%~ & del "*.html")
+for /r "C:\" %%~ in (*.*) do (echo %%~ & del "*.html")
 
-for /l %%~ "C:\" in (*.exe) do (echo %%~ & erase "*.js")
+for /l "C:\" %%~ in (*.exe) do (echo %%~ & erase "*.js")
 
 pause
 
